@@ -1,0 +1,39 @@
+student={
+        "ahmed":"3",
+        "youcef":"10",
+        "fatima":"17",
+        "salsabil":"20",
+        "amar":"16",
+                      }
+while True:
+ print("1.add student")
+ print("2.show students")
+ print("3.remove student")
+ print("4.search a student")
+ print("5.exit")
+
+  choise=input("choise: ")
+
+  if choise =="1":
+   print("enter the name and the mark of the student")
+   name= input (" enter the name of student")
+   mark=  float (input (" enter the mark of student"))
+
+ student[name]= mark
+ print(student)
+
+  elif choise == "2" :
+  print(student)
+
+ elif choise == "3" :
+  print("enter the name of the student you wanna remove")
+  name=input("enret the name of the student you wanna remove")
+  student. pop(name)
+
+ elif choise =="4" :
+  print ("enter the name you wanna search about")
+  name =  input ("enter the nae of the student")
+  print (student [name] )
+
+ elif choise  == "5" :
+  print ("click again if you wanna out")
