@@ -1,0 +1,27 @@
+task[]
+the_task_complet []
+while True:
+ print("1.add a task")
+ print("2.the task had complet")
+ print("3. show the taskes")
+ print("4.remove a task")
+ print("5.exit")
+ choise = input ("choise:")
+ if choise== "1" :
+  new_task= input ("enter the task you wanna do")
+  task.append(new_task)
+  print (task)
+ elif choise== "2" :
+  the_task_had_complet=input("slect the task had been done")
+  task.remove(the_task_had_complet)
+  the_task_complet. append(the_task_had_complet)
+  print(the_task_complet)
+ elif choise== "3" :
+  print(task)
+ elif choise== "4" :
+  remove_task=input(" enter thetask you wanna remove")
+  task.ramove(remove_task)
+ elif choise== "5" :
+  print("click on the botten above to get out ; good bye")  
+ while false:
+  print ("good bye")
