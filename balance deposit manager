@@ -1,0 +1,43 @@
+accounts = {
+  
+}
+while True :
+
+ print("1.creat account")
+ print("2.depoit")
+ print("3.withdraw")
+ print("4.show balance")
+ print("5.delet account")
+ print("6.show all accounts")
+ print("7.exit")
+
+ choise = input ("choise : ")
+    if choise == "1":
+     name = input("enter your name")
+     balance= int (input ("enter your balance"))
+
+     accounts[name]=balance
+
+     print(" you creat account")
+
+    elif choise == "2":
+     account_name= input("enter the name of the account")
+     accounts [account_name]
+     deposit_amount = int(input("enter the deposit amount "))
+     the_total=  balance +deposit_amount
+     print(the_total)
+
+    elif choise =="3":
+     account_name= input("enter the name of account")
+     withdrawal_amount=int(input("enter the withdrawal amount"))
+     def max (balance ,withdrawal_amount )
+        if balance >= withdrawal_amount
+          print("done")
+
+        elif balance << withdrawal_amount
+          print ("you can't withdrawal amount ")
+
+    elif choise == "4":
+ 
+     account_name= input("enter the name of account")
+     print(balance)
