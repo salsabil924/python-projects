@@ -1,0 +1,56 @@
+cart = {}
+
+while True :
+
+   print("1.add product")
+   print("2.remove product")
+   print("3.show cart")
+   print("4.calculate total")
+   print("5.search product")
+   print("6.exit")
+
+   choise = input ("choise :")
+
+    if choise == "1":   
+
+      product = input(" enter th product yiu wanna buy")
+      price =float( input("enter the price of product"))
+      cart[product]=price
+      
+
+    elif choise == "2" :
+  
+     product = input ("enter the product you wanna remove")
+      if product in cart :
+       
+       price = float (cart[product])
+       
+       cart . pop (product)
+      elif :
+      print("not found")
+     
+    elif choise =="3" :
+    
+     if not in cart:
+      print("not found")
+     else :
+       print (cart)
+    elif choise == "4" :
+      amount = 0
+      for price in cart . value():
+
+       amout += price
+       print(amount)
+
+     elif choise == "5" :
+      
+     product = input ("enter the product you search")
+     if product in cart:
+    
+      print(cart [product])
+
+     else:
+      print("not found")
+
+    elif choise == "6" :
+     break
