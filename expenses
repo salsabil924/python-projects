@@ -1,0 +1,57 @@
+expenses = {}
+amounts= 0
+while True :
+   
+
+    desires :[]
+
+    print ("1.add expense")
+    print("2.delete expense")
+    print("3.show expense")
+    print("4.calculte total")
+    print("5.search expense")
+    print("6.exit")
+
+    choise = input("choise : ")
+
+    if choise == "1" :
+        new_expense = input ("enter the name of expense")
+        
+        amount=  float (input("enter the amount"))
+
+        expenses [new_expense] = amount
+        amounts = amounts + amount
+        desires . append(new_expense)
+
+    elif choise == "2":
+        expense = input ("enter the expense you wanna delete")
+        if expense in expenses :
+         amount = expenses [expense]
+         expenses . pop (expense)
+         desires . remove (expense) 
+         amounts = amounts - amount 
+         print( amounts )
+        elif:
+        print("not found")
+         
+    elif choise == "3" :
+
+     print(expenses)
+
+    elif choise == "4" :
+       print(amounts)
+
+    elif choise == "5" :
+       expense = input ("enter the expense you search about")
+
+        if expense in expenses :
+         
+         print(expenses [expense])
+
+        elif expense not in expenses :
+
+          print("not founded")
+
+
+    elif choise == "6" : 
+       break
