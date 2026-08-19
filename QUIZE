@@ -1,0 +1,40 @@
+
+questions= {"what's the capital of Algeria" : "algiers" ,
+           
+          "what the language speak in the middle east":"arabic" ,
+
+          "whate largest country in world" : "Russia" ,
+
+}
+while True :
+
+    print ("1.start quize ")
+  
+    print("2.show the score")
+    print("3.exit")
+
+    choise = input("choise:")
+
+    if choise == "1" :
+         for question , answer in questions.item ():
+               print(question)
+               user_answer = input ("enter your answer")
+               if answer == user_answer :
+                print("true")
+                score += 1
+
+               else : 
+                print (" false")
+
+       
+     if score >= 3
+            print("good job")
+
+     else :
+           print("keep going")
+
+    elif choise == "2":
+      print(score)
+
+    elif choise == "3" :
+        breakscore= 0
